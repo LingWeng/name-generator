@@ -26,4 +26,12 @@ public class CharacterServiceImpl implements CharacterService {
         }
         return characterDTOS ;
     }
+
+    @Override
+    public CharacterDTO getCharacter(String email) {
+        Candidate candidate = candidateRepo.findByEmail(email);
+        return new CharacterDTO(candidate.getCharacterImg(), candidate.getCharacterName());
+    }
+
+
 }

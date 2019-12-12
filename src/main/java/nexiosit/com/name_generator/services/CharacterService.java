@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface CharacterService {
     List<CharacterDTO> getCharacters();
+    CharacterDTO getCharacter(String email);
 
 }

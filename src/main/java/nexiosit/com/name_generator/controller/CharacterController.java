@@ -4,10 +4,7 @@ import lombok.RequiredArgsConstructor;
 import nexiosit.com.name_generator.model.dto.CharacterDTO;
 import nexiosit.com.name_generator.services.CharacterService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,6 +20,12 @@ public class CharacterController {
     public ResponseEntity<List<CharacterDTO>> getCharacters(){
         return ResponseEntity.ok(characterService.getCharacters());
     }
+
+    @GetMapping("/{email}")
+    public ResponseEntity<CharacterDTO> getCharacter(@PathVariable String email){
+        return ResponseEntity.ok(characterService.getCharacter(email));
+    }
+
 
 
 }
