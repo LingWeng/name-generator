@@ -14,6 +14,7 @@ import java.net.URISyntaxException;
 @RestController
 @RequestMapping("/api/candidate")
 @RequiredArgsConstructor
+@CrossOrigin
 public class CandidateController {
 
     private final CandidateService candidateService;
