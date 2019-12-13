@@ -24,8 +24,12 @@ public class ImageGenerator {
 
         BufferedImage image = null;
 
+        try {
             image = ImageIO.read(bis);
-            String path = "";
+        } catch (IOException e) {
+            log.error("Input image not found");
+        }
+        String path = "";
             switch (rnd.nextInt(6)) {
                 case 0:
                     path = ":img/blue_lightsaber.png";
@@ -72,11 +76,11 @@ public class ImageGenerator {
 
             final ByteArrayOutputStream os = new ByteArrayOutputStream();
 
+        try {
             ImageIO.write(combined, "PNG", os);
-            return Base64.getEncoder().encodeToString(os.toByteArray());
-
-
-
-        return img;
+        } catch (IOException e) {
+            log.error("new image couldn't be created");
+        }
+        return Base64.getEncoder().encodeToString(os.toByteArray());
     }
 }
