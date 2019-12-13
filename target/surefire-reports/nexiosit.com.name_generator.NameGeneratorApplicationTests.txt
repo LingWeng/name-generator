@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: nexiosit.com.name_generator.NameGeneratorApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.303 s <<< FAILURE! - in nexiosit.com.name_generator.NameGeneratorApplicationTests
+contextLoads  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, postgres://zltwovtznoxewk:b7dbd0beec6961775b5768c29a606ae5ac0d527cb36855ad5421ec318eda6bba@ec2-46-137-120-243.eu-west-1.compute.amazonaws.com:5432/dfos742hr0ht1m
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, postgres://zltwovtznoxewk:b7dbd0beec6961775b5768c29a606ae5ac0d527cb36855ad5421ec318eda6bba@ec2-46-137-120-243.eu-west-1.compute.amazonaws.com:5432/dfos742hr0ht1m
+Caused by: java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, postgres://zltwovtznoxewk:b7dbd0beec6961775b5768c29a606ae5ac0d527cb36855ad5421ec318eda6bba@ec2-46-137-120-243.eu-west-1.compute.amazonaws.com:5432/dfos742hr0ht1m
+
