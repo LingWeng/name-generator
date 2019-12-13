@@ -1,21 +1,20 @@
 package nexiosit.com.name_generator.utils;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.Base64;
 import java.util.Random;
 
 @Component
 @RequiredArgsConstructor
+@Slf4j
 public class ImageGenerator {
     private final Random rnd;
 
@@ -24,12 +23,12 @@ public class ImageGenerator {
         ByteArrayInputStream bis = new ByteArrayInputStream(decodedBytes);
 
         BufferedImage image = null;
-        try {
+
             image = ImageIO.read(bis);
             String path = "";
             switch (rnd.nextInt(6)) {
                 case 0:
-                    path = "classpath:img/blue_lightsaber.png";
+                    path = ":img/blue_lightsaber.png";
                     break;
                 case 1:
                     path = "classpath:img/green_lightsaber.png";
@@ -48,10 +47,22 @@ public class ImageGenerator {
                     break;
             }
 
-            File file = ResourceUtils.getFile(path);
-            BufferedImage overlay = ImageIO.read(file);
 
-            int w = image.getWidth();
+        File file = null;
+        try {
+            file = ResourceUtils.getFile(path);
+        } catch (FileNotFoundException e) {
+            log.error(path + " not found");
+            e.printStackTrace();
+        }
+        BufferedImage overlay = null;
+        try {
+            overlay = ImageIO.read(file);
+        } catch (IOException e) {
+            log.error("file not found!");
+        }
+
+        int w = image.getWidth();
             int h = image.getHeight();
             BufferedImage combined = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
 
@@ -65,9 +76,6 @@ public class ImageGenerator {
             return Base64.getEncoder().encodeToString(os.toByteArray());
 
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
         return img;
     }
