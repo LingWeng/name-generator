@@ -32,7 +32,7 @@ public class ImageGenerator {
         String path = "";
             switch (rnd.nextInt(6)) {
                 case 0:
-                    path = ":img/blue_lightsaber.png";
+                    path = "classpath:img/blue_lightsaber.png";
                     break;
                 case 1:
                     path = "classpath:img/green_lightsaber.png";
@@ -57,7 +57,6 @@ public class ImageGenerator {
             file = ResourceUtils.getFile(path);
         } catch (FileNotFoundException e) {
             log.error(path + " not found");
-            e.printStackTrace();
         }
         BufferedImage overlay = null;
         try {
