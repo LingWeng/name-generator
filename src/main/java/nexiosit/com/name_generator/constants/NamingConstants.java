@@ -1,9 +1,10 @@
 package nexiosit.com.name_generator.constants;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class NamingConstants {
-    public static List<String> prefixes = List.of("Insulted",
+    public static List<String> prefixes = Arrays.asList("Insulted",
             "Swore",
             "Trimmed",
             "Pleased",
@@ -765,7 +766,7 @@ public class NamingConstants {
             "Master",
             "Count",
             "Constable");
-    public static List<String> names = List.of(
+    public static List<String> names = Arrays.asList(
             "Sim Aloo",
             "Almec",
             "Mas Amedda",
@@ -1048,7 +1049,7 @@ public class NamingConstants {
             "Ziro the Hutt",
             "Zuckuss",
             "Zuvio");
-    public static List<String> planets = List.of("of Argonar",
+    public static List<String> planets = Arrays.asList("of Argonar",
             "of Abafar",
             "of Abednedo",
             "of Absanz",
