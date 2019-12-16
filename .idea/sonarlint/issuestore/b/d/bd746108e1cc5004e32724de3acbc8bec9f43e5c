@@ -1,24 +1,0 @@
-
-jsquid:S1192Ÿ"FDefine a constant instead of duplicating this literal "Rebel" 5 times.(šÀûÑıÿÿÿÿ8‚œªõï-
-ksquid:S1192§"LDefine a constant instead of duplicating this literal "Jedi Knight" 5 times.(Şşå8‚œªõï-
-nsquid:S1192¢"JDefine a constant instead of duplicating this literal "Commander" 5 times.(Ö²Îçşÿÿÿÿ8‚œªõï-
-esquid:S1192ª"FDefine a constant instead of duplicating this literal "Count" 5 times.(ÆÖ¨½8‚œªõï-
-osquid:S1192¡"KDefine a constant instead of duplicating this literal "Lieutenant" 5 times.(ÜÕµ¡øÿÿÿÿ8‚œªõï-
-psquid:S1192™"LDefine a constant instead of duplicating this literal "Jedi Master" 5 times.(ƒ¡–èùÿÿÿÿ8‚œªõï-
-lsquid:S1192—"HDefine a constant instead of duplicating this literal "Colonel" 5 times.(òË¢Âûÿÿÿÿ8‚œªõï-
-lsquid:S1192¦"HDefine a constant instead of duplicating this literal "Padawan" 5 times.(ƒáÓÌúÿÿÿÿ8‚œªõï-
-isquid:S1192›"JDefine a constant instead of duplicating this literal "Sith Lord" 5 times.(½¬˜Ò8‚œªõï-
-gsquid:S1192 "HDefine a constant instead of duplicating this literal "Captain" 5 times.(•ÆÆİ8‚œªõï-
-fsquid:S1192©"GDefine a constant instead of duplicating this literal "Master" 5 times.(¦ ã‘8‚œªõï-
-lsquid:S1192˜"HDefine a constant instead of duplicating this literal "General" 5 times.(ıè›Åşÿÿÿÿ8‚œªõï-
-isquid:S1192«"JDefine a constant instead of duplicating this literal "Constable" 5 times.(ìô£ı8‚œªõï-
-rsquid:S1192œ"NDefine a constant instead of duplicating this literal "Bounty Hunter" 5 times.(÷²î°şÿÿÿÿ8‚œªõï-
-msquid:S1192"IDefine a constant instead of duplicating this literal "Podracer" 5 times.(Ê¦ñûıÿÿÿÿ8‚œªõï-
-qsquid:S1192"MDefine a constant instead of duplicating this literal "Stormtrooper" 5 times.(ÀÇËÑşÿÿÿÿ8‚œªõï-
-gsquid:S1192¥"HDefine a constant instead of duplicating this literal "Emperor" 5 times.(ÊÔ«Â8‚œªõï-
-jsquid:S1192š"FDefine a constant instead of duplicating this literal "Darth" 5 times.(ÿÂÄóÿÿÿÿÿ8‚œªõï-
-esquid:S1192£"FDefine a constant instead of duplicating this literal "Queen" 5 times.(¹åŸê8‚œªõï-
-lsquid:S1192¤"HDefine a constant instead of duplicating this literal "Senator" 5 times.(ëøÑ¾úÿÿÿÿ8‚œªõï-
-Lsquid:S1444".Make this "public static prefixes" field final(„í¿¥8‚œªõï-
-‰"squid:ClassVariableVisibilityCheck"TMake prefixes a static final constant or non-public and provide accessors if needed.(„í¿¥8‚œªõï-
-Xsquid:S1118":Add a private constructor to hide the implicit public one.(è§“ò8‚œªõï-
